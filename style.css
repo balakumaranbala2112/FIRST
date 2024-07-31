@@ -1,0 +1,428 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; 
+    font-size: 1.2rem;
+    font-family: popins;
+  /*   position: relative; */
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+/******************************************************************* SIDE-NAVEBAR-CSS-STYLE-IS-START *********************************************************************************/
+
+/* 
+--------------- ------------------------------------------------------| SIDE-NAV-BASIC-DESIGN |------------------------------------------------------------------------------------------------
+* STEP 01 : SIDE NAVIGATION WIDTH : 250PX
+* STEP 02 : SIDE NAVIGATION HEIGHT : 100%
+* STEP 03 : POSITION IS SET TO FIXED
+* STEP 04 : SET DISPLAY FLEX & FLEX-DIRECTION : COLUMN & JUSTIFY-CONTENT : COLUMN
+*/
+.side-nav-section{
+    width:250px;
+    height: 100%;
+    background-color: rgb(24, 24, 160);
+    color: #ffffff;
+    position: fixed;
+    padding-top: 0;
+    padding-left:0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* LOGO DESIGN IS HERE START*/
+.img-logo img{
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-top: 18px;
+    
+}
+.img-logo{
+    display: flex;
+    justify-content: center;
+}
+.img-logo figcaption{
+    margin-top: 5px;
+}
+
+
+/*LOGO DESIGN IS HERE END*/
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.icon a{
+    text-decoration: none;
+    padding: 10px;
+    background: #ffffff;
+    margin: 5px;
+    border-radius: 50%;
+    line-height: 15px;
+}
+
+.icon a i{
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.icon a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.icon a i:hover{
+    color:hwb(0 100% 0%);
+    transition: 0.5s;
+    line-height: 10px;
+}
+
+/* 
+* SIDE-NAVBAR-LINK-DESIGN
+*/
+
+.navbar-links nav ul a{
+    color: #ffffff;
+}
+
+.navbar-links nav ul{
+    list-style-type:none ;
+    text-align: center;
+}
+
+.navbar-links nav ul li{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+   /*  border-left: 1px solid #808080;                               
+    border-right: 1px solid #808080;  */  
+    border-radius: 4px;                            
+}
+
+.main-nav ul li:hover{
+    background-color:#ffffff;
+    box-shadow: inset;
+}
+
+.main-nav ul li a:hover{
+    color: #0000ff;
+}
+
+.navbar-footer{
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+
+.navbar-footer a{
+    color: #ffffff;
+}
+
+#main{
+    margin-left: 250px;
+}
+
+#home-section{
+    height: 100vh;
+    width: 100%;
+    background: url('../assets/images/mountain.jpg');
+    background-attachment: fixed;
+}
+
+.home figure img{
+    height: 100vh;
+    width: 100%;
+   
+}
+
+/* ABOUT SECTION START HERE */
+
+.about-section{
+    /* width: 100%;
+    height: 100vh;  */
+    padding-left: 30px;
+/*     font-size: 1.2rem;
+    font-family: popins; */
+}
+
+.about-section h1{
+    color: #0000ff;
+    padding-top: 28px;
+    /* margin: 20px 0 30px 0; */
+    font-size: 2rem;
+}
+
+.about-section h1::after{
+    content:" ";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    display: block;
+    margin-bottom: 0 auto;
+    background-color: #000000;
+}
+
+.about-explanation{
+    text-align: justify;
+    padding: 30px 0 40px 0;
+}
+
+.img-box-container{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.right h3{
+    color: #05057b;
+    font-size: 1.8rem;
+}
+
+.right p{
+    padding: 15px 0 15px 0;
+}
+
+.about-section ul{
+    list-style-type: none;
+}
+
+.about-section img{
+    float: left;
+    margin-right: 30px;
+    width: 250px;
+    height: 250px;
+}
+
+.information{
+    margin: 30px auto 0 0;
+}
+
+
+.information .resume-item{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.information .lists li{
+    height: 35px;
+}
+.lists li::before{
+    content: ">";
+    padding: 10px;
+    color: #0f06ba;
+    size: 10px;
+    border: #0000ff;
+}
+.right ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first-column{
+    padding-right: 100px;
+}
+
+.right .first-column{
+    float: left;
+    margin-right: 30px;
+    
+}
+/* END OF ABOUT SECTION */
+
+/* RESUME SECTION START HERE */
+
+.resume-section{
+    width: 100%;
+    height: 100vh;
+ /*    font-size: 1.2rem;
+    font-family: popins; */
+}
+
+#resume-section{
+    padding-left: 35px;
+}
+
+.resume-section ul{
+    list-style-type: none;
+}
+
+
+.information{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.section-title h2{
+    color: #0000ff;
+    padding: 29px 0 0 0;
+    font-size: 1.7rem;
+}
+
+.section-title h2::after{
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color:  #0000ff;
+}
+
+.section-title p{
+    text-align: justify;
+    padding: 30px 0 40px 0;   
+}
+
+/* .left-container{
+    border-left: 3.5px solid black;
+} */
+
+.resume-section .side-border::before{
+   /*  content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0;
+    left: -5px;
+    background-color: #999c99;
+    border: 2px solid #0749ce; */
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -10px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+/* .right-container{
+    border-left: 3.5px solid black;
+} */
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.left-container .left-first p{
+    padding: 14px 0 20px 0px;
+    /* text-align: right; */
+}
+
+
+.left-container .left-first ul li{
+    padding-left: 20px;
+}
+
+.left-container .left-first ul li::before{
+    content: "* ";
+    color: #0000ff;
+}
+
+
+.left-container .left-second h3{
+    padding: 14px 0 20px 20px;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+
+.left-container .left-second p{
+    padding: 20px 0 30px 20px;
+    text-align: left;
+}
+
+
+.left-container .left-second ul li{
+    padding-left: 20px;
+}
+
+.left-container .left-second ul li::before{
+    content: "* ";
+    color: #0000ff;
+}
+
+.right-container h3{
+    padding: 14px 0 20px 20px;
+    font-size: 1.5rem;   
+}
+
+/* .right-container h3{
+    width: 20px;
+    height: 20px;
+    background-color: #1f5297;
+}
+ */
+
+ .right-container .resume-item h5{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8%;
+    background-color: #709edf;
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+ }
+
+ .resume-item p{
+    text-align: justify;
+    margin-left: 30px;
+    margin-top: 20px;
+ }
+
+
+
+/* SERVICES SECTION START HERE */
+
+/* .services-section{
+    width: 100%;
+    height: 100vh;
+}    
+ */
+
+/* CONTACT SECTION START HERE */
+
+/* .contact-section{
+    width: 100%;
+    height: 100vh;
+}
+ */
+.back-to-top{
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    bottom: 30px;
+    right: 35px;
+    position: relative;
+    position: fixed;
+}
+
+.back-to-top a{
+    color: #ffffff;
+}
+
+/* .back-to-top:hover{
+    width: 0;
+    height: 0;
+} */
